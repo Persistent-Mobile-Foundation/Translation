@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+Licensed Materials - Property of Persistent © Copyright 2023 Persistent Systems.
+Portions of this code are derived from IBM Corp © Copyright IBM Corp. 2006, 2016.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Translation</title>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="format-detection" content="telephone=no">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <!-- load script with wlCommonInit defined before loading cordova.js -->
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+    </head>
+    <body>
+        <div id="header">
+			<h1 id="headerText" class="translate"></h1>
+		</div>			
+		<div id="wrapper">
+			<label for="languages" id="actionsLabel" class="translate"></label>
+			<select id="languages">
+				<option value="">--Select--</option>
+				<option value="english" id="englishLanguage" class="translate" selected="selected"></option>
+				<option value="french" id="frenchLanguage" class="translate"></option>
+				<option value="russian" id="russianLanguage" class="translate"></option>
+				<option value="hebrew" id="hebrewLanguage" class="translate"></option>
+			</select>
+			<div id="sampleText" class="translate"></div>
+		</div>
+    </body>
+</html>
